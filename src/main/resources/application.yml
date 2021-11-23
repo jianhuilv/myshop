@@ -2,7 +2,7 @@ Spring:
   mail:
     host: smtp.163.com
     username: shopmail_noreply@163.com
-    password: PZNIIJKADWBGDPNV
+    password:
     port: 465
     default-encoding: UTF-8
     properties:
@@ -19,9 +19,9 @@ Spring:
              required: true
         debug: true
   datasource:
-    url: jdbc:mysql://121.40.202.71:3306/shopbase?serverTimezone=UTC
+    url:
     username: root
-    password: qq69.com
+    password:
     driver-class-name: com.mysql.cj.jdbc.Driver
   servlet:
     multipart:
