@@ -1,0 +1,36 @@
+Spring:
+  mail:
+    host: smtp.163.com
+    username: shopmail_noreply@163.com
+    password: PZNIIJKADWBGDPNV
+    port: 465
+    default-encoding: UTF-8
+    properties:
+      mail:
+        smtp:
+          socketFactory:
+            Class: javax.net.ssl.SSLSocketFactory
+            port: 465
+          ssl:
+            enable: true
+          auth: true
+          starttls:
+             enable: true
+             required: true
+        debug: true
+  datasource:
+    url: jdbc:mysql://121.40.202.71:3306/shopbase?serverTimezone=UTC
+    username: root
+    password: qq69.com
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  servlet:
+    multipart:
+      max-request-size: 10MB
+      max-file-size: 10MB
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+server:
+  tomcat:
+    accesslog:
+      buffered: true
