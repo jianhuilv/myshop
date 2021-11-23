@@ -2,7 +2,7 @@ Spring:
   mail:
     host: smtp.163.com
     username: shopmail_noreply@163.com
-    password: PZNIIJKADWBGDPNV
+    password: 
     port: 465
     default-encoding: UTF-8
     properties:
