@@ -50,9 +50,9 @@ public class AdminController {
         String rand=(int)(Math.random()*100000)+"";
         String fileName=rand+production.getImage_file().getOriginalFilename();
         //String filePath="C:/Users/69060/Desktop/image/datatest/"+production.getPname()+"/";
-        String filePath="/usr/local/nginx/shop/data/image/"+production.getPname()+"/";
+        String filePath="/usr/local/nginx/html/shop/data/image/"+production.getPname()+"/";
         production.setImage(filePath+fileName);
-        production.setUrl("http://121.40.202.71/shop/data/image"+production.getPname()+"/"+fileName);
+        production.setUrl("http://121.40.202.71/shop/data/image/"+production.getPname()+"/"+fileName);
         if(!(fileName.endsWith(".jpg")||fileName.endsWith(".jpeg")||fileName.endsWith("png")))
         {
             return new R(false);
