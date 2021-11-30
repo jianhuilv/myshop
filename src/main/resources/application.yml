@@ -20,7 +20,7 @@ Spring:
         debug: true
   datasource:
     url:
-    username: root
+    username:
     password:
     driver-class-name: com.mysql.cj.jdbc.Driver
   servlet:
